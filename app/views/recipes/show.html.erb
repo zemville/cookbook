@@ -7,9 +7,9 @@
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @recipe.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:ingredients) %>:</strong></dt>
-  <dd><%= @recipe.ingredients %></dd>
+  <dd><%= raw @recipe.ingredients %></dd>
   <dt><strong><%= model_class.human_attribute_name(:directions) %>:</strong></dt>
-  <dd><%= @recipe.directions %></dd>
+  <dd><%= raw @recipe.directions %></dd>
   <dt><strong><%= model_class.human_attribute_name(:category_id) %>:</strong></dt>
   <dd><%= @recipe.category_id %></dd>
 </dl>

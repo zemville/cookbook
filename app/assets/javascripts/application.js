@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require wysihtml5-0.3.0.min
+//= require bootstrap-wysihtml5
+//= require init
 //= require_tree .

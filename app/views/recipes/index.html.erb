@@ -8,7 +8,7 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:ingredients) %></th>
-      <th><%= model_class.human_attribute_name(:directions) %></th>
+      <!-- <th><%= model_class.human_attribute_name(:directions) %></th> -->
       <th><%= model_class.human_attribute_name(:category_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -20,9 +20,9 @@
         <td><%= link_to recipe.id, recipe_path(recipe) %></td>
         <td><%= recipe.title %></td>
         <td><%= recipe.ingredients %></td>
-        <td><%= recipe.directions %></td>
+        <!-- <td><%= recipe.directions %></td> -->
         <td><%= recipe.category.name %></td>
-        <td><%=l recipe.created_at %></td>
+        <td><%= recipe.created_at.strftime("%b %e %Y %R") %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_recipe_path(recipe), :class => 'btn btn-mini' %>
